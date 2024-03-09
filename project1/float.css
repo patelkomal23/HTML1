@@ -1,0 +1,13 @@
+body {
+    background-color:#b4cee9;
+  }
+  #myDIV {
+    height:300px;
+  }
+  img {
+    float: left;
+  }
+  p
+  {
+    clear: left;
+  }
