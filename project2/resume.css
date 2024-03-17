@@ -27,6 +27,12 @@ h1{
 .profile{
     width: 150px;
     border-radius: 60%;
+
+}
+.profile:hover{
+    width:200px;
+    transition:transform 2s ease-in-out;
+    transition-delay:1s;
 }
 .top-section{
     background-color: #151b29;
@@ -85,8 +91,8 @@ h1{
     
 }
 .p3{
-color: #2a1a1a;
-margin-bottom: -5px;
+    color: #2a1a1a;
+    margin-bottom: -5px;
 }
 .fa{
     color:#151b29
