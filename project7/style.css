@@ -1,0 +1,34 @@
+.flip-card {
+    width: 200px;
+    height: 200px;
+    perspective: 1000px; /* Add perspective for 3D effect */
+  }
+  
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d; /* Preserve 3D effect */
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Rotate the inner card on hover */
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Hide backface for better performance */
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    transform: rotateY(180deg); /* Initially hide the back side */
+    color: white;
+  }
